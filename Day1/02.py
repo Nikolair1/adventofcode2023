@@ -27,7 +27,7 @@ def convert_value(value):
 
 sum = 0
 f = open("input.txt", "r")
-o = open("o_2.txt", "w")
+
 
 for line in f:
     digits = re.findall(
@@ -36,4 +36,4 @@ for line in f:
     if digits:
         sum += 10 * convert_value(digits[0]) + convert_value(digits[-1])
 
-o.write(str(sum))
+print(sum)
